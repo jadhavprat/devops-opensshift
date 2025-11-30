@@ -28,7 +28,7 @@ services:
     depends_on:
       - kafka
     ports:
-      - "9000:9000"
+      - "5000:9095"
     environment:
       SPRING_KAFKA_BOOTSTRAP_SERVERS: kafka:9092
 
@@ -38,6 +38,6 @@ services:
     depends_on:
       - kafka
     ports:
-      - "9091:9091"
+      - "5050:9098"
     environment:
       SPRING_KAFKA_BOOTSTRAP_SERVERS: kafka:9092
